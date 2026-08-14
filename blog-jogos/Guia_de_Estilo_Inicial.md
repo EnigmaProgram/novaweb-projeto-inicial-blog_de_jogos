@@ -8,15 +8,39 @@ A escolha das cores e tipografias busca equilibrar a estética associada ao univ
 
 ---
 
-## 2. Paleta de Cores
+## 2. Pesquisa — Regra 60-30-10
+
+A **Regra 60-30-10** é uma técnica de composição de cores utilizada para criar equilíbrio e hierarquia visual em uma interface. Ela divide as cores em três proporções: **60% para a cor dominante, 30% para a cor secundária e 10% para a cor de destaque**. A técnica serve como um ponto de partida para organizar visualmente uma interface e evitar que diferentes cores disputem a atenção do usuário. :contentReference[oaicite:0]{index=0}
+
+### 60% — Cor dominante
+
+A cor dominante ocupa a maior parte da interface, sendo normalmente aplicada em fundos e grandes áreas. Sua função é criar uma base visual para os demais elementos.
+
+### 30% — Cor secundária
+
+A cor secundária complementa a dominante e pode ser utilizada em elementos estruturais, como menus, cabeçalhos, cards e outras áreas da interface.
+
+### 10% — Cor de destaque
+
+A cor de destaque deve aparecer em menor quantidade e ser utilizada principalmente nos elementos que precisam chamar a atenção do usuário, como botões, links, indicadores e chamadas para ação. :contentReference[oaicite:1]{index=1}
+
+A proporção **60-30-10 não precisa ser seguida de maneira matemática e rígida**. Ela funciona como uma orientação para ajudar a estabelecer equilíbrio e hierarquia visual, podendo ser adaptada de acordo com a necessidade do projeto. :contentReference[oaicite:2]{index=2}
+
+### Aplicação no projeto
+
+Para o Blog de Jogos, a regra será aplicada da seguinte maneira:
+
+| Proporção | Cor | Código HEX | Aplicação |
+|---|---|---|---|
+| **60%** | Cinza escuro | `#333032` | Fundo principal e grandes áreas da página |
+| **30%** | Roxo escuro | `#330D4C` | Menu lateral, cabeçalho, cards e elementos estruturais |
+| **10%** | Vermelho queimado | `#AA1F00` | Botões, links, chamadas e elementos de destaque |
+
+---
+
+## 3. Paleta de Cores
 
 A paleta foi definida utilizando a **Regra 60-30-10**, distribuindo as cores de acordo com sua importância visual na interface.
-
-| Proporção | Cor               | Código HEX | Aplicação                                              |
-| --------- | ----------------- | ---------- | ------------------------------------------------------ |
-| **60%**   | Cinza escuro      | `#333032`  | Fundo principal e grandes áreas da página              |
-| **30%**   | Roxo escuro       | `#330D4C`  | Menu lateral, cabeçalho, cards e elementos estruturais |
-| **10%**   | Vermelho queimado | `#AA1F00`  | Botões, links, chamadas e elementos de destaque        |
 
 ### 60% — `#333032`
 
@@ -32,7 +56,7 @@ O vermelho queimado será utilizado como cor de destaque. Por aparecer em menor 
 
 ---
 
-## 3. Tipografia
+## 4. Tipografia
 
 Foram escolhidas duas fontes para criar uma hierarquia visual entre títulos e textos.
 
@@ -54,7 +78,7 @@ A fonte será utilizada em textos de artigos, descrições, menus, informações
 
 ---
 
-## 4. Hierarquia Tipográfica
+## 5. Hierarquia Tipográfica
 
 A combinação das fontes será organizada da seguinte forma:
 
@@ -68,7 +92,7 @@ Essa divisão permite que os títulos tenham maior personalidade enquanto os tex
 
 ---
 
-## 5. Aplicação Visual
+## 6. Aplicação Visual
 
 A identidade visual será aplicada nas três páginas definidas anteriormente:
 
@@ -82,7 +106,7 @@ A combinação entre fundo escuro, roxo e vermelho queimado será mantida de for
 
 ---
 
-## 6. Resumo da Identidade
+## 7. Resumo da Identidade
 
 **Estilo:** Gamer, moderno e tecnológico
 
@@ -98,3 +122,11 @@ A combinação entre fundo escuro, roxo e vermelho queimado será mantida de for
 * Inter — textos e navegação
 
 **Objetivo visual:** Criar um site de notícias sobre jogos que tenha uma identidade claramente gamer, mas que mantenha uma aparência organizada, moderna e agradável para leitura.
+
+---
+
+## Referências da Pesquisa
+
+* [Alura — Regra 60-30-10 em UI Design] :contentReference[oaicite:3]{index=3}
+* [Hellen Teixeira — Regra 60-30-10: como usar as cores na interface] :contentReference[oaicite:4]{index=4}
+* [Visily — 60-30-10 Rule in UI Design] :contentReference[oaicite:5]{index=5}
