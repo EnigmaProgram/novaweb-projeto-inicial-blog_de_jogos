@@ -214,3 +214,150 @@ Dessa forma, o design em blocos serve como um planejamento visual da página, en
 ## Qual a importância de planejar a estrutura semântica antes de escrever o código CSS/HTML?
 
 Planejar a estrutura semântica antes de desenvolver o código é importante porque permite organizar corretamente o conteúdo da página desde o início. Com essa estrutura definida, torna-se mais fácil aplicar estilos em CSS, manter o código organizado e facilitar futuras alterações. Além disso, o uso de HTML semântico melhora a acessibilidade, ajuda os mecanismos de busca a compreenderem o conteúdo da página e proporciona uma experiência mais eficiente para os usuários. Portanto, esse planejamento reduz retrabalho e contribui para um desenvolvimento mais organizado e de melhor qualidade.
+
+
+
+# Introdução à Web e Linguagens de Marcação
+## Parte 1: Engenharia Reversa de Sintaxe
+
+### Trecho A (HTML5):
+
+
+HTML
+<section>
+  <h1>Python Fluente</h1>
+  <p>Autor: Luciano Ramalho</p>
+</section>
+
+
+### Trecho B (Markdown):
+
+
+Markdown
+#Python Fluente
+Autor: Luciano Ramalho
+
+
+### Trecho C (XML):
+
+
+
+XML
+<catalogo>
+  <livro>
+    <titulo>Python Fluente</titulo>
+    <autor>Luciano Ramalho</autor>
+  </livro>
+</catalogo>
+
+
+
+### 1. Qual dos trechos foca estritamente na semântica personalizada de dados?
+O **Trecho C (XML)** é o que foca na **semântica personalizada de dados**
+Isso acontece porque o XML permite criar tags próprias para representar o significado das informações, como `<catalogo>`, `<livro>`, `<titulo>` e `<autor>`.
+
+Essas tags descrevem o que cada informação representa, sem definir como ela será apresentada visualmente na tela. Dessa forma, o XML tem como principal objetivo estruturar e descrever os dados.
+
+
+### 2. Qual sintaxe é mais eficiente para documentar um código em um repositório?
+
+O **Markdown (Trecho B)** é a opção mais eficiente e limpa para documentação de código em um repositório.
+
+Sua sintaxe é simples e fácil de ler, permitindo criar títulos, listas, tabelas, links e blocos de código sem a necessidade de utilizar várias tags.
+
+Por isso, o Markdown é muito utilizado em arquivos `README.md` e em plataformas como GitHub e GitLab.
+
+
+### 3. Qual seria obrigatoriamente a base estrutural de uma loja virtual?
+
+A opção seria o **HTML5 (Trecho A)**.
+
+O HTML é utilizado para estruturar páginas web e organizar os elementos que serão apresentados ao usuário, como títulos, textos, imagens, menus, produtos e links.
+
+Portanto, para criar a página principal de uma loja virtual que será acessada e navegada pelo usuário, o **HTML5 é a base estrutural**.
+
+
+## Parte 2: Auditoria de Infraestrutura Real
+
+### 1. Consulta de Valores de Mercado
+
+O valor para registrar um domínio `.com.br` por **1 ano** é de **R$ 40,00**.
+
+Existe desconto para períodos maiores. Por exemplo:
+
+| Período |    Valor |
+| ------- | -------: |
+| 1 ano   | R$ 40,00 |
+| 2 anos  | R$ 76,00 |
+
+Portanto, **sim, existe desconto para períodos maiores**.
+
+A consulta deve ser realizada no site oficial do [Registro.br](https://registro.br/), pois os valores podem sofrer alterações.
+
+
+### 2. Rastreamento de IP — DNS na prática
+
+Para realizar o teste, foi escolhido o domínio `senai.br`.
+
+O comando utilizado no terminal foi:
+
+```bash
+ping senai.br
+```
+
+O endereço IPv4 retornado pelo DNS foi:
+
+```text
+191.233.16.218
+```
+
+Isso demonstra o funcionamento básico do **DNS (Domain Name System)**. O usuário informa um nome de domínio, como `senai.br`, e o DNS realiza a resolução desse nome para um endereço IP utilizado para localizar o servidor.
+
+
+### 3. Ferramenta Whois — Investigação de Propriedade
+
+Para a consulta Whois, foi escolhido o domínio:
+
+```text
+uol.com.br
+```
+
+#### Entidade/Empresa detentora
+
+**Universo Online S.A.**
+
+**CNPJ:** `01.109.184/0004-38`
+
+#### Data de criação original do domínio
+
+**24/04/1996**
+
+#### Data de expiração atual do registro
+
+**24/04/2034**
+
+#### Servidores DNS
+
+Os servidores DNS encontrados para o domínio são:
+
+* `eliot.uol.com.br` — `172.64.52.216`
+* `borges.uol.com.br` — `172.64.53.68`
+* `charles.uol.com.br` — `172.64.52.59`
+
+Esses servidores são responsáveis por fornecer as informações DNS utilizadas para direcionar o domínio aos serviços correspondentes.
+
+
+## Conclusão
+
+A atividade permitiu compreender as diferenças entre **HTML5, Markdown e XML**, observando que cada linguagem possui uma finalidade diferente.
+
+O **HTML5** é utilizado principalmente para estruturar páginas web, o **Markdown** facilita a criação de documentação e o **XML** permite representar dados utilizando uma estrutura semântica personalizada.
+
+Também foi possível observar, na prática, o funcionamento do **DNS**, relacionando um nome de domínio a um endereço IP. Por meio da consulta Whois, também foram identificadas informações relacionadas ao registro de um domínio real, como a empresa responsável, a data de criação, a data de expiração e os servidores DNS.
+
+
+### Fontes
+
+* [Registro.br](https://registro.br/)
+* [Whois — UOL](https://www.whois.com/whois/uol.com.br)
+* [Informações de IP — SENAI](https://www.ipaddress.com/website/senai.br/)
