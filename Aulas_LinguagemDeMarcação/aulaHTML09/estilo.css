@@ -1,0 +1,14 @@
+.card {
+    width: 300px;
+    /* largura do texto */
+    height: 150px;
+    /* altura do texto */
+    padding: 20px;
+    /* espaço interno do texto */
+    border: 1px solid #ccc;
+    /* borda do card */
+    margin: 10px auto;
+    /* margem do card */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    /* O padrão do box-shadow é direita, baixo, desfoque, cor */
+}
