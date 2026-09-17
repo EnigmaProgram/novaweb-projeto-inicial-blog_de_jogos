@@ -429,6 +429,33 @@ RESPONSIVIDADE
 
 /*
 =========================================================
+MENSAGEM SEM RESULTADOS
+=========================================================
+*/
+
+.sem-resultados {
+    width: 100%;
+
+    padding: 30px;
+
+    margin-top: 25px;
+
+    background-color: #330D4C;
+
+    border: 1px solid #AA1F00;
+
+    border-radius: 8px;
+
+    color: #cccccc;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+
+/*
+=========================================================
 TÍTULO DA SEÇÃO
 =========================================================
 */
