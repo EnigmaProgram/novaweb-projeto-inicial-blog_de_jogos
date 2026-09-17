@@ -1,0 +1,496 @@
+/*
+Descricao: Estilos do Blog de Jogos - NovaWeb Studio
+nome_arquivo: style.css
+nome_exercicio: Situação de Aprendizagem 01 - HTML
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+*/
+
+
+/*
+=========================================================
+PALETA DE CORES
+=========================================================
+
+60% → #333032
+30% → #330D4C
+10% → #AA1F00
+*/
+
+
+/*
+=========================================================
+RESET
+=========================================================
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+=========================================================
+BODY
+=========================================================
+*/
+
+body {
+    background-color: #333032;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+}
+
+
+/*
+=========================================================
+BARRA LATERAL
+=========================================================
+*/
+
+.barra-lateral {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 200px;
+    height: 100vh;
+
+    background-color: #330D4C;
+
+    padding: 25px 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*
+=========================================================
+LOGO
+=========================================================
+*/
+
+.logo {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+
+/*
+Área reservada para colocar a imagem
+do logo posteriormente.
+*/
+
+.logo-imagem {
+    width: 80px;
+    height: 80px;
+
+    margin: 0 auto 15px;
+
+    border: 2px solid #AA1F00;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #AA1F00;
+
+    font-weight: bold;
+}
+
+
+.logo h2 {
+    font-size: 24px;
+
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+
+.logo span {
+    font-size: 13px;
+
+    color: #cccccc;
+}
+
+
+/*
+=========================================================
+MENU
+=========================================================
+*/
+
+.menu ul {
+    list-style: none;
+}
+
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+
+.menu a {
+    display: block;
+
+    padding: 13px 15px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+
+.menu a:hover {
+    background-color: #AA1F00;
+}
+
+
+.menu a.ativo {
+    background-color: #AA1F00;
+}
+
+
+/*
+=========================================================
+CONTEÚDO PRINCIPAL
+=========================================================
+*/
+
+.conteudo {
+    margin-left: 240px;
+
+    padding: 45px;
+
+    max-width: 1400px;
+}
+
+
+/*
+=========================================================
+CABEÇALHO
+=========================================================
+*/
+
+.cabecalho {
+    background-color: #330D4C;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    margin-bottom: 40px;
+}
+
+
+.categoria {
+    color: #AA1F00;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.cabecalho h1 {
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.cabecalho > p:last-child {
+    color: #cccccc;
+
+    font-size: 17px;
+
+    line-height: 1.6;
+
+    max-width: 700px;
+}
+
+
+/*
+=========================================================
+TÍTULO DA SEÇÃO
+=========================================================
+*/
+
+.titulo-secao {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+
+.titulo-secao h2 {
+    font-size: 28px;
+}
+
+
+.titulo-secao a {
+    color: white;
+
+    text-decoration: none;
+
+    background-color: #AA1F00;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+}
+
+
+.titulo-secao a:hover {
+    opacity: 0.8;
+}
+
+
+/*
+=========================================================
+GRID DE NOTÍCIAS
+=========================================================
+*/
+
+.grid-noticias {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/*
+=========================================================
+CARD DE NOTÍCIA
+=========================================================
+*/
+
+.card-noticia {
+    background-color: #330D4C;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #44304d;
+
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+
+.card-noticia:hover {
+    transform: translateY(-4px);
+
+    border-color: #AA1F00;
+}
+
+
+/*
+=========================================================
+ÁREA DA IMAGEM
+=========================================================
+*/
+
+.imagem-noticia {
+    height: 190px;
+
+    background-color: #333032;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #888888;
+
+    border-bottom: 2px solid #AA1F00;
+}
+
+
+.imagem-noticia span {
+    font-size: 14px;
+}
+
+
+/*
+=========================================================
+CONTEÚDO DO CARD
+=========================================================
+*/
+
+.conteudo-card {
+    padding: 22px;
+}
+
+
+.tag {
+    display: inline-block;
+
+    color: white;
+
+    background-color: #AA1F00;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    padding: 5px 8px;
+
+    border-radius: 4px;
+
+    margin-bottom: 12px;
+}
+
+
+.conteudo-card h3 {
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.conteudo-card p {
+    color: #cccccc;
+
+    line-height: 1.5;
+
+    margin-bottom: 18px;
+}
+
+
+/*
+=========================================================
+LINK DA NOTÍCIA
+=========================================================
+*/
+
+.link-noticia {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.link-noticia:hover {
+    color: #AA1F00;
+}
+
+
+/*
+=========================================================
+RODAPÉ
+=========================================================
+*/
+
+.rodape {
+    margin-top: 50px;
+
+    padding: 25px 0;
+
+    border-top: 1px solid #555;
+
+    color: #999999;
+
+    text-align: center;
+}
+
+
+/*
+=========================================================
+RESPONSIVIDADE
+=========================================================
+*/
+
+@media (max-width: 800px) {
+
+    .barra-lateral {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+    }
+
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+
+    .menu ul {
+        display: flex;
+
+        justify-content: center;
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .menu li {
+        margin-bottom: 0;
+    }
+
+
+    .conteudo {
+        margin-left: 0;
+
+        padding: 25px;
+    }
+
+
+    .grid-noticias {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .cabecalho {
+        padding: 25px;
+    }
+
+
+    .cabecalho h1 {
+        font-size: 28px;
+    }
+
+
+    .titulo-secao {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        flex-direction: column;
+    }
+
+}
