@@ -1,7 +1,7 @@
 <!--
-Descricao: Exercícios da Aula 04 - Introdução ao CSS e Seletores (Parte extra/opcional)
-nome_arquivo: sobre.html
-nome_exercicio: Atividade 04 - Prática com Seletores (Parte extra/opcional)
+Descricao: Página Sobre e Contato do Blog de Jogos - NovaWeb Studio
+nome_arquivo: sobre-contato.html
+nome_exercicio: Situação de Aprendizagem 01 - HTML
 nome_aluno: Enrico Bernardo Carneiro Lelis
 email_aluno: enrico.lelis@edu.senai.br
 turma: TDE-1BAA-26
@@ -11,32 +11,239 @@ turma: TDE-1BAA-26
 <html lang="pt">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática com Seletores</title>
-    <link rel="stylesheet" href="estilo.css">
+
+    <title>Sobre e Contato - NovaWeb Studio</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
 
-    <h1 class="titulo">Sobre</h1>
+    <!-- BARRA LATERAL -->
 
-    <p id="descricao">Sobre este projeto</p>
+    <aside class="barra-lateral">
 
-    <ul class="lista">
-        <li>Projeto desenvolvido para estudar HTML.</li>
-        <li>Utilização de CSS para estilização.</li>
-        <li>Criação de links entre páginas.</li>
-        <li>Utilização de listas estruturadas.</li>
-    </ul>
+        <div class="logo">
+
+            <a href="../index.html">
+
+                <div class="logo-imagem">
+                    LOGO
+                </div>
+
+                <h2>NovaWeb</h2>
+
+                <span>Blog de Jogos</span>
+
+            </a>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="posts.html">
+                        Notícias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-contato.html" class="ativo">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-contato.html">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+
+        <!-- PESQUISA -->
+
+        <section class="area-pesquisa">
+
+            <details class="pesquisa">
+
+                <summary aria-label="Abrir pesquisa">
+                    🔍
+                </summary>
+
+                <form>
+
+                    <input
+                        type="search"
+                        name="pesquisa"
+                        placeholder="Pesquisar notícias..."
+                        aria-label="Pesquisar notícias"
+                    >
+
+                    <button type="submit" aria-label="Pesquisar">
+                        🔍
+                    </button>
+
+                </form>
+
+            </details>
+
+        </section>
+
+
+        <!-- SOBRE -->
+
+        <section class="pagina-sobre">
+
+            <div class="titulo-secao">
+
+                <h1>
+                    Sobre o NovaWeb Studio
+                </h1>
+
+            </div>
+
+
+            <article class="bloco-conteudo">
+
+                <h2>
+                    Sobre o blog
+                </h2>
+
+                <p>
+                    O NovaWeb Studio é um projeto de blog temático voltado
+                    para o mundo dos jogos.
+                </p>
+
+                <p>
+                    O objetivo do blog é reunir notícias, análises,
+                    tendências e outros conteúdos relacionados à indústria
+                    dos games.
+                </p>
+
+                <p>
+                    A proposta é apresentar as informações de forma simples,
+                    organizada e acessível para o público gamer.
+                </p>
+
+            </article>
+
+
+            <!-- CONTATO -->
+
+            <article class="bloco-conteudo">
+
+                <h2>
+                    Entre em contato
+                </h2>
+
+                <p>
+                    Tem alguma dúvida, sugestão ou gostaria de entrar em
+                    contato com o NovaWeb Studio?
+                </p>
+
+
+                <form class="formulario-contato">
+
+                    <label for="nome">
+                        Nome
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+
+
+                    <label for="email">
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                        required
+                    >
+
+
+                    <label for="assunto">
+                        Assunto
+                    </label>
+
+                    <input
+                        type="text"
+                        id="assunto"
+                        name="assunto"
+                        placeholder="Digite o assunto"
+                        required
+                    >
+
+
+                    <label for="mensagem">
+                        Mensagem
+                    </label>
+
+                    <textarea
+                        id="mensagem"
+                        name="mensagem"
+                        placeholder="Digite sua mensagem"
+                        rows="6"
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+        <footer class="rodape">
+
+            <p>
+                © 2026 NovaWeb Studio - Blog de Jogos
+            </p>
+
+        </footer>
+
+
+    </main>
+
 
 </body>
 

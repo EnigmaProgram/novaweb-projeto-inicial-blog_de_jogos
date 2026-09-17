@@ -1,7 +1,7 @@
 <!--
-Descricao: Exercícios da Aula 04 - Introdução ao CSS e Seletores (Parte extra/opcional)
-nome_arquivo: produtos.html
-nome_exercicio: Atividade 04 - Prática com Seletores (Parte extra/opcional)
+Descricao: Página de notícias do Blog de Jogos - NovaWeb Studio
+nome_arquivo: posts.html
+nome_exercicio: Situação de Aprendizagem 01 - HTML
 nome_aluno: Enrico Bernardo Carneiro Lelis
 email_aluno: enrico.lelis@edu.senai.br
 turma: TDE-1BAA-26
@@ -11,31 +11,325 @@ turma: TDE-1BAA-26
 <html lang="pt">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prática com Seletores</title>
-    <link rel="stylesheet" href="estilo.css">
+
+    <title>Notícias - NovaWeb Studio</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+
 </head>
 
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-        </ul>
-    </nav>
 
-    <h1 class="titulo">Produtos</h1>
+    <!-- BARRA LATERAL -->
 
-    <p id="descricao">Confira alguns produtos disponíveis:</p>
+    <aside class="barra-lateral">
 
-    <ol class="lista">
-        <li>Eu</li>
-        <li>AttiqueTecnologia</li>
-        <li>Allan Lima</li>
-    </ol>
+        <div class="logo">
+
+            <a href="../index.html">
+
+                <div class="logo-imagem">
+                    LOGO
+                </div>
+
+                <h2>NovaWeb</h2>
+
+                <span>Blog de Jogos</span>
+
+            </a>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="../index.html">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="posts.html" class="ativo">
+                        Notícias
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-contato.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href="sobre-contato.html">
+                        Contato
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+
+        <!-- PESQUISA -->
+
+        <section class="area-pesquisa">
+
+            <details class="pesquisa">
+
+                <summary aria-label="Abrir pesquisa">
+                    🔍
+                </summary>
+
+                <form>
+
+                    <input
+                        type="search"
+                        name="pesquisa"
+                        placeholder="Pesquisar notícias..."
+                        aria-label="Pesquisar notícias"
+                    >
+
+                    <button type="submit" aria-label="Pesquisar">
+                        🔍
+                    </button>
+
+                </form>
+
+            </details>
+
+        </section>
+
+
+        <!-- NOTÍCIAS -->
+
+        <section class="noticias">
+
+            <div class="titulo-secao">
+
+                <h1>
+                    Notícias
+                </h1>
+
+            </div>
+
+
+            <div class="grid-noticias">
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            NOTÍCIAS
+                        </span>
+
+                        <h2>
+                            Novidades do mundo dos games
+                        </h2>
+
+                        <p>
+                            Confira as principais novidades e acontecimentos
+                            recentes da indústria dos jogos.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            LANÇAMENTOS
+                        </span>
+
+                        <h2>
+                            Principais lançamentos do mês
+                        </h2>
+
+                        <p>
+                            Confira alguns dos jogos que estão chegando
+                            e chamando a atenção dos jogadores.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            ANÁLISE
+                        </span>
+
+                        <h2>
+                            Análise de jogos recentes
+                        </h2>
+
+                        <p>
+                            Veja nossas opiniões e análises sobre jogos
+                            lançados recentemente.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            TECNOLOGIA
+                        </span>
+
+                        <h2>
+                            Tecnologia e o futuro dos games
+                        </h2>
+
+                        <p>
+                            Algumas das tecnologias que podem transformar
+                            a maneira como jogamos.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            GAMES
+                        </span>
+
+                        <h2>
+                            Jogos que merecem atenção
+                        </h2>
+
+                        <p>
+                            Conheça títulos que podem passar despercebidos
+                            mas merecem uma oportunidade.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card-noticia">
+
+                    <div class="imagem-noticia">
+                        <span>IMAGEM</span>
+                    </div>
+
+                    <div class="conteudo-card">
+
+                        <span class="tag">
+                            TENDÊNCIAS
+                        </span>
+
+                        <h2>
+                            Tendências da indústria
+                        </h2>
+
+                        <p>
+                            Entenda algumas das tendências que estão
+                            movimentando o mercado de jogos.
+                        </p>
+
+                        <a href="#" class="link-noticia">
+                            Ler notícia →
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <footer class="rodape">
+
+            <p>
+                © 2026 NovaWeb Studio - Blog de Jogos
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+    <script src="../assets/js/script.js"></script>
 
 </body>
 

@@ -233,18 +233,13 @@ BARRA DE PESQUISA
 =========================================================
 */
 
-/*
-=========================================================
-BARRA DE PESQUISA
-=========================================================
-*/
-
 .area-pesquisa {
     display: flex;
 
     justify-content: flex-end;
 
-    margin-bottom: 30px;
+    margin-top: -20px;
+    margin-bottom: 15px;
 }
 
 
@@ -698,4 +693,131 @@ RESPONSIVIDADE
         flex-direction: column;
     }
 
+}
+
+
+/*
+=========================================================
+PÁGINA SOBRE
+=========================================================
+*/
+
+.pagina-sobre {
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+.bloco-conteudo {
+    background-color: #330D4C;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    border: 1px solid #44304d;
+}
+
+
+.bloco-conteudo h2 {
+    margin-bottom: 15px;
+
+    font-size: 24px;
+}
+
+
+.bloco-conteudo p {
+    color: #cccccc;
+
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+
+/*
+=========================================================
+FORMULÁRIO DE CONTATO
+=========================================================
+*/
+
+.formulario-contato {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+
+.formulario-contato label {
+    font-weight: bold;
+
+    margin-top: 8px;
+}
+
+
+.formulario-contato input,
+.formulario-contato textarea {
+    width: 100%;
+
+    padding: 13px 15px;
+
+    background-color: #333032;
+
+    color: white;
+
+    border: 1px solid #555;
+
+    border-radius: 6px;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+    border-color: #AA1F00;
+}
+
+
+.formulario-contato textarea {
+    resize: vertical;
+}
+
+
+.formulario-contato button {
+    width: fit-content;
+
+    margin-top: 15px;
+
+    padding: 13px 22px;
+
+    background-color: #AA1F00;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.formulario-contato button:hover {
+    opacity: 0.8;
 }
