@@ -229,6 +229,211 @@ CABEÇALHO
 
 /*
 =========================================================
+BARRA DE PESQUISA
+=========================================================
+*/
+
+/*
+=========================================================
+BARRA DE PESQUISA
+=========================================================
+*/
+
+.area-pesquisa {
+    display: flex;
+
+    justify-content: flex-end;
+
+    margin-bottom: 30px;
+}
+
+
+/*
+=========================================================
+ÁREA COLAPSÁVEL
+=========================================================
+*/
+
+.pesquisa {
+    position: relative;
+}
+
+
+/*
+REMOVE A SETINHA PADRÃO DO DETAILS
+*/
+
+.pesquisa summary {
+    list-style: none;
+
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #AA1F00;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    user-select: none;
+}
+
+
+/*
+REMOVE A SETINHA EM ALGUNS NAVEGADORES
+*/
+
+.pesquisa summary::-webkit-details-marker {
+    display: none;
+}
+
+
+/*
+EFEITO AO PASSAR O MOUSE
+*/
+
+.pesquisa summary:hover {
+    opacity: 0.8;
+}
+
+
+/*
+=========================================================
+FORMULÁRIO
+=========================================================
+*/
+
+.pesquisa form {
+    position: absolute;
+
+    top: 0;
+
+    right: 0;
+
+    display: flex;
+
+    width: 330px;
+
+    height: 45px;
+
+    animation: abrirPesquisa 0.25s ease;
+}
+
+
+/*
+=========================================================
+CAMPO
+=========================================================
+*/
+
+.pesquisa input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 12px 15px;
+
+    background-color: #330D4C;
+
+    color: white;
+
+    border: 1px solid #AA1F00;
+
+    border-right: none;
+
+    border-radius: 6px 0 0 6px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.pesquisa input::placeholder {
+    color: #aaaaaa;
+}
+
+
+.pesquisa input:focus {
+    border-color: #AA1F00;
+}
+
+
+/*
+=========================================================
+BOTÃO
+=========================================================
+*/
+
+.pesquisa button {
+    width: 45px;
+
+    background-color: #AA1F00;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 0 6px 6px 0;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+
+.pesquisa button:hover {
+    opacity: 0.8;
+}
+
+
+/*
+=========================================================
+ANIMAÇÃO
+=========================================================
+*/
+
+@keyframes abrirPesquisa {
+
+    from {
+        opacity: 0;
+
+        transform: translateX(10px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateX(0);
+    }
+
+}
+
+
+/*
+=========================================================
+RESPONSIVIDADE
+=========================================================
+*/
+
+@media (max-width: 500px) {
+
+    .pesquisa form {
+        width: 260px;
+    }
+
+}
+
+
+/*
+=========================================================
 TÍTULO DA SEÇÃO
 =========================================================
 */
@@ -244,7 +449,7 @@ TÍTULO DA SEÇÃO
 }
 
 
-.titulo-secao h2 {
+.titulo-secao h1 {
     font-size: 28px;
 }
 
