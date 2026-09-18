@@ -80,50 +80,41 @@ LOGO
 
 .logo {
     text-align: center;
-
     margin-bottom: 50px;
 }
 
+.logo a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
 
-/*
-Área reservada para colocar a imagem
-do logo posteriormente.
-*/
+.logo a:focus {
+    outline: none;
+}
 
 .logo-imagem {
     width: 80px;
     height: 80px;
-
     margin: 0 auto 15px;
-
-    border: 2px solid #AA1F00;
-    border-radius: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: #AA1F00;
-
-    font-weight: bold;
 }
 
+.logo-imagem img {
+    width: 100%;
+    height: 100%;
+}
 
 .logo h2 {
     font-size: 24px;
-
     color: white;
-
-    margin-bottom: 5px;
+    margin: 0 0 5px 0;
 }
-
 
 .logo span {
+    display: block;
     font-size: 13px;
-
-    color: #cccccc;
+    color: #ccc;
 }
-
 
 /*
 =========================================================
@@ -863,60 +854,18 @@ LOCALIZAÇÃO / MAPA
 
 .mapa {
     width: 100%;
-
     height: 350px;
-
     margin-top: 25px;
-
     overflow: hidden;
-
     border-radius: 8px;
-
     border: 1px solid #555;
 }
 
-
-.mapa-placeholder {
+.mapa iframe {
     width: 100%;
-
     height: 100%;
-
-    background-color: #333032;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
-
-    text-align: center;
-
-    color: #cccccc;
+    border: 0;
 }
-
-
-.mapa-placeholder span {
-    font-size: 40px;
-
-    margin-bottom: 10px;
-}
-
-
-.mapa-placeholder p {
-    color: white;
-
-    font-size: 20px;
-
-    margin-bottom: 5px;
-}
-
-
-.mapa-placeholder small {
-    color: #999999;
-}
-
 
 .endereco {
     margin-top: 25px;
