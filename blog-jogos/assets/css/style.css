@@ -41,24 +41,8 @@ BODY
 body {
     background-color: #333032;
     color: white;
-
-    font-family: Arial, sans-serif;
-
+    font-family: 'Inter', sans-serif;
     min-height: 100vh;
-}
-
-
-/*
-=========================================================
-FONTES
-=========================================================
-*/
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-body {
-    font-family: 'Inter', sans-serif;
 }
 
 h1,
@@ -108,10 +92,6 @@ LOGO
 .logo a {
     color: inherit;
     text-decoration: none;
-    outline: none;
-}
-
-.logo a:focus {
     outline: none;
 }
 
@@ -366,11 +346,6 @@ CAMPO
 
 .pesquisa input::placeholder {
     color: #aaaaaa;
-}
-
-
-.pesquisa input:focus {
-    border-color: #AA1F00;
 }
 
 
@@ -915,4 +890,81 @@ LOCALIZAÇÃO / MAPA
 
 .endereco p {
     color: #cccccc;
+}
+
+
+/*
+=========================================================
+PÁGINA DE NOTÍCIAS
+=========================================================
+*/
+
+.pagina-noticia {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cabecalho-noticia {
+    margin-bottom: 25px;
+}
+
+.cabecalho-noticia h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.data-noticia {
+    color: #999;
+    font-size: 14px;
+}
+
+.imagem-principal-noticia {
+    width: 100%;
+    height: 520px;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #44304d;
+    margin-bottom: 30px;
+}
+
+.imagem-principal-noticia img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.texto-noticia {
+    background-color: #330D4C;
+    padding: 35px;
+    border-radius: 10px;
+    border: 1px solid #44304d;
+}
+
+.texto-noticia p {
+    color: #ccc;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.texto-noticia h2 {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.voltar-noticias {
+    margin-top: 25px;
+}
+
+.voltar-noticias a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voltar-noticias a:hover {
+    color: #AA1F00;
 }
