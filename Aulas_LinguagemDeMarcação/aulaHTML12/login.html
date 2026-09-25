@@ -1,0 +1,76 @@
+<!--
+Descricao: Exercícios da Aula 12 - Introdução aos Formulários Web
+nome_arquivo: login.html
+nome_exercicio: Atividade 12 - Introdução aos Formulários Web
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - NovaWeb Studio</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="login-box">
+
+            <h1>Login</h1>
+
+            <p class="descricao">
+                Entre com seus dados para acessar sua conta.
+            </p>
+
+            <form id="formLogin">
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Digite seu e-mail"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input
+                        type="password"
+                        id="senha"
+                        name="senha"
+                        placeholder="Digite sua senha"
+                    >
+                </div>
+
+                <p id="mensagemErro"></p>
+
+                <button type="submit">Entrar</button>
+
+            </form>
+
+            <div class="links">
+
+                <a href="#">Esqueci minha senha</a>
+
+                <a href="#">Criar uma conta</a>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="login.js"></script>
+
+</body>
+</html>
