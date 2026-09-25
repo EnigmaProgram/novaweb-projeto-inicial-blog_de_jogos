@@ -1,0 +1,140 @@
+/*
+Descricao: Estilos da Aula 12 - Introdução aos Formulários Web
+nome_arquivo: login.css
+nome_exercicio: Atividade 12 - Introdução aos Formulários Web
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    background-color: #333032;
+    color: white;
+}
+
+.container {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 35px;
+
+    background-color: #330D4C;
+
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.login-box h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    text-align: center;
+}
+
+.descricao {
+    margin-bottom: 30px;
+
+    text-align: center;
+
+    color: #dddddd;
+}
+
+.campo {
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: bold;
+}
+
+.campo input {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    font-size: 16px;
+}
+
+.campo input:focus {
+    outline: none;
+
+    border-color: #AA1F00;
+}
+
+button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #AA1F00;
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 25px;
+
+    gap: 15px;
+}
+
+.links a {
+    color: white;
+
+    font-size: 14px;
+
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+#mensagemErro {
+    margin-bottom: 15px;
+
+    color: #ff6b6b;
+
+    font-size: 14px;
+
+    text-align: center;
+}
