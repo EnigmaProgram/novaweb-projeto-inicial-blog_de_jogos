@@ -1,46 +1,67 @@
+/*
+Descricao: Estilos da Aula 11 - Tabelas e Dados Tabulados
+nome_arquivo: estilos.css
+nome_exercicio: Aula 11 - Tabelas e Dados Tabulados
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+*/
+
+
+/* Cabeçalho */
+
 header {
-    background-color: palevioletred;
+    background-color:indigo;
     padding: 5px;
-    color:white; 
+    color: white;
+    text-align: center;
 }
+
+
+/* Menu de navegação */
+
 header nav {
-    background-color: aliceblue;
+    background-color:firebrick;
+    padding: 5px;
 }
+
 header nav ul {
     list-style: none;
-    position:relative;
-    height: 30px;
-    display:flex;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
+
 header nav ul li {
-    position:relative;
-    display: block;
-    margin: 10px;
+    margin: 0;
 }
+
+header nav ul li a {
+    display: block;
+    padding: 8px 15px;
+    color: #e9e3e3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+    color:white;
+}
+
+
+/* Conteúdo principal */
+
 main {
     background-color: whitesmoke;
     padding: 5px;
 }
-main table {
-    width: 400px;
-    border: 1px solid black;
-    border-collapse: collapse;
-    text-align: center;
-}
-main table td, main table th {
-    border: 1px solid black;
-    padding: 5px;
-}
-main table td img:hover {
-    width: 150px;
-}
-footer {
-    background-color: rgb(21, 17, 17);
-    color: aliceblue;
-    padding: 5px;
-    text-align: center;
-    margin-top: 20px;
-}
+
+
+/* Títulos */
 
 main h2 {
     text-align: center;
@@ -55,19 +76,30 @@ main h3 {
     border-left: 5px solid #333;
 }
 
+
+/* Tabelas */
+
 main table {
     width: 100%;
+    table-layout: fixed;
+    border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
     background-color: white;
     margin-bottom: 25px;
 }
 
+
+/* Células */
+
 main table th,
 main table td {
-    border-bottom: 1px solid #ddd;
-    padding: 12px 8px;
+    border: 1px solid black;
+    padding: 8px 5px;
 }
+
+
+/* Cabeçalho da tabela */
 
 main table th {
     background-color: #f1f3f4;
@@ -75,11 +107,85 @@ main table th {
     font-weight: bold;
 }
 
-main table td:nth-child(2) {
+
+/* Coluna das equipes */
+
+main table th:first-child,
+main table td:first-child {
+    width: 25%;
     text-align: left;
-    font-weight: bold;
 }
+
+
+/* Coluna das últimas partidas */
+
+main table th:last-child,
+main table td:last-child {
+    width: 15%;
+}
+
+
+/* Colunas numéricas */
+
+main table th:not(:first-child):not(:last-child),
+main table td:not(:first-child):not(:last-child) {
+    width: 6.66%;
+}
+
+
+/* Nomes grandes das equipes */
+
+main table td:first-child {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Últimas partidas */
+
+main table td:last-child {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+/* Bolinhas das últimas partidas */
+
+.ultima-partida {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background-color: #bdbdbd;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+
+/* Efeito ao passar o mouse */
 
 main table tbody tr:hover {
     background-color: #f5f5f5;
+}
+
+
+/* Equipe classificada */
+
+.passou {
+    border-left: 5px solid #333;
+    background-color: #d4edda;
+    color: #155724;
+    font-weight: bold;
+}
+
+
+/* Rodapé */
+
+footer {
+    background-color: rgb(21, 17, 17);
+    color: aliceblue;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
 }
