@@ -456,3 +456,52 @@ Para usuários de leitores de tela, os campos devem possuir identificações cla
 
 As decisões de UI/UX da tela de login têm como objetivo tornar o acesso ao sistema simples, organizado e fácil de entender. O uso de labels, hierarquia visual, estados de entrada e práticas de acessibilidade ajuda o usuário a identificar as informações necessárias, perceber erros e realizar o login com mais facilidade.
 
+# Projeto Nova-Web - UI/UX Design
+
+## Aula 09: UX de Tabelas de Dados e Telas de Perfil
+
+### 1. Pesquisa Teórica - UX para Tabelas Corporativas
+
+#### Alinhamento de Dados
+
+* **Textos:** devem ser alinhados à esquerda para facilitar a leitura.
+* **Números e valores monetários:** devem ser alinhados à direita.
+* **Status e ações rápidas:** podem ser centralizados.
+
+#### Filtros e Busca
+
+* O campo de pesquisa principal deve ficar no topo, acima da tabela, facilitando o acesso e a localização das informações.
+* Filtros avançados podem ser agrupados em menus suspensos (dropdowns), evitando ocupar muito espaço na interface.
+
+#### Hierarquia Visual
+
+* Tabelas extensas podem utilizar cabeçalhos fixos (*sticky header*) para manter os títulos das colunas visíveis durante a rolagem.
+* A utilização de cores alternadas nas linhas (*zebra striping*) ou bordas sutis ajuda na leitura horizontal dos dados.
+* O uso de espaçamentos consistentes melhora a organização e a visualização das informações.
+
+### 2. Especificação do Protótipo (Figma)
+
+* **Link do Projeto no Figma:** [Cole o link do seu projeto aqui]
+
+#### Telas Desenvolvidas
+
+1. **Perfil de Usuário:** exibição de avatar, nome, cargo, status, dados pessoais, formulário de edição e nível de permissão.
+2. **Área de Consulta (Tabela):** lista de usuários com campo de busca, filtros, ordenação, paginação e ações de visualizar, editar e excluir.
+
+### 3. Componentes Utilizados
+
+* Input de pesquisa
+* Botões de ação
+* Badges de status
+* Tabela de dados
+* Paginação
+* Cards
+* Abas (Tabs)
+* Ícones de ação
+* Avatar de usuário
+
+### 4. Objetivo da Interface
+
+O objetivo do protótipo é criar uma interface administrativa organizada e fácil de utilizar, permitindo consultar usuários, visualizar seus dados e realizar ações de gerenciamento de forma clara e eficiente.
+
+
