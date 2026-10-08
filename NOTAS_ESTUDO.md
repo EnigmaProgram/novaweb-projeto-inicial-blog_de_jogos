@@ -361,3 +361,98 @@ Também foi possível observar, na prática, o funcionamento do **DNS**, relacio
 * [Registro.br](https://registro.br/)
 * [Whois — UOL](https://www.whois.com/whois/uol.com.br)
 * [Informações de IP — SENAI](https://www.ipaddress.com/website/senai.br/)
+
+
+# Projeto Nova-Web - Especificações de UI/UX (Tela de Login)
+
+## 1. Conceitos de Usabilidade em Formulários
+
+### Labels vs. Placeholders
+
+A **label** identifica o que deve ser preenchido no campo, como "E-mail" ou "Senha". Ela continua visível mesmo depois que o usuário começa a digitar.
+
+O **placeholder** é um texto de exemplo que aparece dentro do campo antes do preenchimento, como "Digite seu e-mail". Ele não deve ser utilizado como substituto da label, porque desaparece quando o usuário começa a escrever e pode dificultar a identificação do campo.
+
+Por isso, no projeto será utilizada uma **label acima de cada campo**, enquanto o placeholder será usado apenas como orientação ou exemplo de preenchimento.
+
+### Hierarquia Visual
+
+A interface deve deixar claro quais ações são mais importantes para o usuário.
+
+O **Primary Button** será utilizado para a ação principal da tela, que neste caso é o botão **"Entrar"**. Ele terá maior destaque visual através de sua cor, tamanho e posição.
+
+As ações secundárias, como **"Esqueci minha senha"** e **"Criar conta"**, terão menos destaque para não competir visualmente com a ação principal.
+
+Essa hierarquia ajuda o usuário a entender rapidamente qual ação deve realizar na tela.
+
+---
+
+## 2. Estados de Validação dos Campos de Entrada
+
+Os campos de entrada terão diferentes estados visuais para informar ao usuário o que está acontecendo.
+
+### Default (Padrão)
+
+É o estado normal do campo antes de qualquer interação.
+
+* Borda com cor neutra.
+* Label visível.
+* Campo com fundo que permita identificar claramente sua área.
+* Texto com contraste adequado.
+
+### Focus (Foco)
+
+Acontece quando o usuário seleciona o campo para começar a digitar.
+
+* A borda receberá um destaque visual.
+* A mudança de aparência indicará qual campo está ativo.
+* O texto e a label continuarão legíveis.
+
+Esse estado ajuda o usuário a identificar onde está digitando.
+
+### Error (Erro)
+
+Será utilizado quando o valor informado estiver incorreto ou faltar alguma informação obrigatória.
+
+* A borda do campo ficará em tom vermelho.
+* Será exibida uma mensagem explicando o problema.
+* A mensagem será clara e objetiva.
+
+Exemplo:
+
+> E-mail ou senha inválidos.
+
+O objetivo é informar o problema sem deixar o usuário tentando descobrir sozinho o que aconteceu.
+
+### Success (Sucesso)
+
+Será utilizado quando o preenchimento de um campo estiver correto.
+
+* O campo receberá um indicador visual de sucesso.
+* A aparência indicará que a informação foi aceita.
+* O indicador não dependerá somente da cor para transmitir a informação.
+
+### Disabled (Desabilitado)
+
+Será utilizado quando um campo ou ação estiver temporariamente indisponível.
+
+* O campo terá aparência mais discreta.
+* O contraste será reduzido, mas o conteúdo continuará legível.
+* O usuário conseguirá perceber que aquele elemento não pode ser utilizado naquele momento.
+
+---
+
+## 3. Padrões de Acessibilidade
+
+A interface deve possuir contraste suficiente entre textos, fundos e elementos para facilitar a leitura. As cores escolhidas para o projeto devem seguir as recomendações de contraste da **WCAG**, principalmente em textos e elementos importantes da interface.
+
+Além do uso de cores, os estados dos campos devem possuir outras formas de identificação. Por exemplo, um campo com erro terá uma mensagem explicativa além da alteração da borda.
+
+A navegação também deve ser possível utilizando o teclado, principalmente através da tecla **Tab**. A ordem de navegação deve seguir uma sequência lógica entre os campos e botões.
+
+Para usuários de leitores de tela, os campos devem possuir identificações claras, permitindo que o usuário saiba qual informação deve ser preenchida e qual ação está disponível.
+
+## Conclusão
+
+As decisões de UI/UX da tela de login têm como objetivo tornar o acesso ao sistema simples, organizado e fácil de entender. O uso de labels, hierarquia visual, estados de entrada e práticas de acessibilidade ajuda o usuário a identificar as informações necessárias, perceber erros e realizar o login com mais facilidade.
+

@@ -14,13 +14,13 @@ const email = document.getElementById("email");
 const senha = document.getElementById("senha");
 
 const mensagemErro = document.getElementById("mensagemErro");
-sd
 
 formLogin.addEventListener("submit", function(event) {
 
     event.preventDefault();
 
     mensagemErro.textContent = "";
+    mensagemErro.style.color = "#FF0000";
 
     if (email.value.trim() === "") {
 
