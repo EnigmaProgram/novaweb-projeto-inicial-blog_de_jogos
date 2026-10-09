@@ -1,0 +1,169 @@
+
+<!--
+Descricao: Atividade 13 - Elementos Avançados de Formulário
+nome_arquivo: index.html
+nome_exercicio: Aula 13 - Elementos Avançados de Formulário
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - NovaWeb Studio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Meu Perfil</h1>
+        <p>NovaWeb Studio - Blog de Jogos</p>
+    </header>
+
+    <main>
+        <form id="formPerfil">
+
+            <div id="mensagem" class="mensagem"></div>
+
+            <section class="perfil">
+                <h2>Informações pessoais</h2>
+
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"
+                        placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento:</label>
+                    <input type="date" id="nascimento"
+                        name="nascimento" required>
+                </div>
+
+                <div class="campo">
+                    <label for="tipo">Tipo de usuário:</label>
+
+                    <label>
+                        <input type="radio" name="tipo"
+                            value="Leitor" required>
+                        Leitor
+                    </label>
+
+                    <label>
+                        <input type="radio" name="tipo"
+                            value="Criador de conteúdo">
+                        Criador de conteúdo
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label>Interesses em jogos:</label>
+
+                    <label>
+                        <input type="checkbox" name="interesses"
+                            value="Ação">
+                        Ação
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses"
+                            value="Aventura">
+                        Aventura
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses"
+                            value="RPG">
+                        RPG
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="interesses"
+                            value="Esportes">
+                        Esportes
+                    </label>
+                </div>
+
+                <div class="campo">
+                    <label for="plataforma">Plataforma favorita:</label>
+
+                    <select id="plataforma" name="plataforma" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="PC">PC</option>
+                        <option value="PlayStation">PlayStation</option>
+                        <option value="Xbox">Xbox</option>
+                        <option value="Nintendo">Nintendo</option>
+                        <option value="Mobile">Celular</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="descricao">Sobre mim:</label>
+
+                    <textarea id="descricao" name="descricao"
+                        rows="4"
+                        placeholder="Conte um pouco sobre você..."
+                        required></textarea>
+                </div>
+
+                <button type="submit">Salvar perfil</button>
+            </section>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>NovaWeb Studio - Blog de Jogos</p>
+    </footer>
+
+    <script>
+        function salvarPerfil(event) {
+            event.preventDefault();
+
+            const nome = document.querySelector("#nome").value;
+            const nascimento = document.querySelector("#nascimento").value;
+            const tipo = document.querySelector('input[name="tipo"]:checked');
+            const plataforma = document.querySelector("#plataforma").value;
+            const descricao = document.querySelector("#descricao").value;
+            const interesses = document.querySelectorAll(
+                'input[name="interesses"]:checked'
+            );
+
+            const mensagem = document.querySelector("#mensagem");
+
+            if (nome.trim() === "" || nascimento === "" ||
+                tipo === null || plataforma === "" ||
+                descricao.trim() === "") {
+
+                mensagem.textContent = "Preencha todos os campos obrigatórios.";
+                mensagem.style.display = "block";
+                mensagem.style.backgroundColor = "#AA1F00";
+
+                return;
+            }
+
+            if (interesses.length === 0) {
+                mensagem.textContent = "Selecione pelo menos um interesse em jogos.";
+                mensagem.style.display = "block";
+                mensagem.style.backgroundColor = "#AA1F00";
+
+                return;
+            }
+
+            mensagem.textContent = "Perfil salvo com sucesso!";
+            mensagem.style.display = "block";
+            mensagem.style.backgroundColor = "#276749";
+        }
+
+        document.querySelector("#formPerfil").addEventListener(
+            "submit", salvarPerfil
+        );
+    </script>
+
+</body>
+</html>
