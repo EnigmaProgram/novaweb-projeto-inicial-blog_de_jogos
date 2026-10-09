@@ -10,3 +10,9 @@ body {
     align-items: center;
     background-color: white;
 }
+
+.form-group {
+    background-color: white;
+    padding: 5px;
+    
+}
