@@ -1,0 +1,115 @@
+<!--
+Descricao: Exercícios da Aula 14 - CSS para Formulários
+nome_arquivo: index.html
+nome_exercicio: Atividade 14 - CSS para Formulários
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 14 - CSS para Formulários</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Formulário de Cadastro</h1>
+
+        <p class="descricao">
+            Clique em Habilitar para preencher cada campo.
+        </p>
+
+        <form>
+            <div class="grupo-campo">
+                <label for="nome">Nome completo</label>
+
+                <div class="linha-campo">
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                        disabled
+                    >
+
+                    <button type="button" data-target="nome">
+                        Habilitar
+                    </button>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">E-mail</label>
+
+                <div class="linha-campo">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        required
+                        disabled
+                    >
+
+                    <button type="button" data-target="email">
+                        Habilitar
+                    </button>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefone">Telefone</label>
+
+                <div class="linha-campo">
+                    <input
+                        type="tel"
+                        id="telefone"
+                        name="telefone"
+                        placeholder="Digite seu telefone"
+                        required
+                        disabled
+                    >
+
+                    <button type="button" data-target="telefone">
+                        Habilitar
+                    </button>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="idade">Idade</label>
+
+                <div class="linha-campo">
+                    <input
+                        type="number"
+                        id="idade"
+                        name="idade"
+                        placeholder="Digite sua idade"
+                        min="1"
+                        max="120"
+                        required
+                        disabled
+                    >
+
+                    <button type="button" data-target="idade">
+                        Habilitar
+                    </button>
+                </div>
+            </div>
+
+            <p class="aviso">
+                Ao clicar fora do campo, ele será desabilitado novamente.
+            </p>
+        </form>
+    </main>
+
+</body>
+</html>
