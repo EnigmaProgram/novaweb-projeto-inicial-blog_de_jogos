@@ -1,3 +1,4 @@
+
 /*
 Descricao: Estilos da Aula 14 - CSS para Formulários
 nome_arquivo: estilo.css
@@ -24,7 +25,7 @@ body {
     margin: 30px auto;
     padding: 30px;
     background-color: #330D4C;
-    border: 1px solid #44304d;
+    border: 1px solid #55405e;
     border-radius: 10px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
@@ -32,13 +33,12 @@ body {
 h1 {
     margin-top: 0;
     text-align: center;
-    color: #ffffff;
 }
 
 .descricao {
     margin-bottom: 25px;
     text-align: center;
-    color: #cccccc;
+    color: #d2cbd5;
 }
 
 .grupo-campo {
@@ -48,7 +48,6 @@ h1 {
 label {
     display: block;
     margin-bottom: 8px;
-    color: #ffffff;
     font-weight: bold;
 }
 
@@ -61,44 +60,50 @@ input {
     flex: 1;
     min-width: 0;
     padding: 12px;
-    border: 2px solid #555055;
+    border: 2px solid #625a64;
     border-radius: 5px;
-    background-color: #333032;
-    color: #ffffff;
-    font-family: inherit;
+    background-color: #ffffff;
+    color: #333032;
     font-size: 15px;
-    outline: none;
-    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input::placeholder {
-    color: #aaaaaa;
+    color: #777777;
 }
 
-/* Campo que está recebendo o foco */
+/* Campo que recebe foco */
 input:focus {
     border-color: #AA1F00;
     box-shadow: 0 0 7px rgba(170, 31, 0, 0.5);
+    outline: none;
 }
 
-/* Campo desabilitado */
-input:disabled {
-    background-color: #292729;
-    color: #aaaaaa;
-    border-color: #44304d;
-    cursor: not-allowed;
-}
-
-/* Campo válido */
-input:valid:not(:disabled) {
-    border-color: #45b36b;
-}
-
-/* Campo inválido */
-input:invalid:not(:disabled) {
+/* Campo com foco automático */
+input:autofocus {
     border-color: #AA1F00;
 }
 
+/* Campo obrigatório */
+input:required {
+    border-left: 4px solid #AA1F00;
+}
+
+/* Campo somente para leitura */
+input:read-only {
+    background-color: #e5e5e5;
+    color: #333032;
+    cursor: default;
+}
+
+/* Campo desabilitado: prevalece sobre readonly */
+input:disabled {
+    background-color: #292729;
+    color: #aaa3ab;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Botões de habilitação */
 button {
     padding: 10px 14px;
     border: 1px solid #AA1F00;
@@ -107,7 +112,7 @@ button {
     color: #ffffff;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.2s, transform 0.2s;
+    transition: background-color 0.2s;
 }
 
 button:hover {
@@ -115,27 +120,24 @@ button:hover {
     border-color: #801800;
 }
 
-button:active {
-    transform: scale(0.97);
-}
-
 button:focus-visible {
     outline: 2px solid #ffffff;
     outline-offset: 3px;
 }
 
+/* Mensagem explicativa */
 .aviso {
     margin-top: 25px;
     padding: 12px;
     background-color: #333032;
     border-left: 4px solid #AA1F00;
     border-radius: 3px;
-    color: #cccccc;
+    color: #d2cbd5;
     font-size: 14px;
     line-height: 1.5;
 }
 
-/* Ajuste para telas pequenas */
+/* Ajustes para telas pequenas */
 @media (max-width: 450px) {
     .container {
         padding: 20px;

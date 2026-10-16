@@ -1,3 +1,4 @@
+
 <!--
 Descricao: Exercícios da Aula 14 - CSS para Formulários
 nome_arquivo: index.html
@@ -8,10 +9,11 @@ turma: TDE-1BAA-26
 -->
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aula 14 - CSS para Formulários</title>
 
     <link rel="stylesheet" href="estilo.css">
@@ -23,12 +25,12 @@ turma: TDE-1BAA-26
         <h1>Formulário de Cadastro</h1>
 
         <p class="descricao">
-            Clique em Habilitar para preencher cada campo.
+            Clique em Habilitar para editar cada campo.
         </p>
 
         <form>
             <div class="grupo-campo">
-                <label for="nome">Nome completo</label>
+                <label for="nome">Nome completo — autofocus</label>
 
                 <div class="linha-campo">
                     <input
@@ -36,8 +38,7 @@ turma: TDE-1BAA-26
                         id="nome"
                         name="nome"
                         placeholder="Digite seu nome"
-                        required
-                        disabled
+                        autofocus
                     >
 
                     <button type="button" data-target="nome">
@@ -47,15 +48,14 @@ turma: TDE-1BAA-26
             </div>
 
             <div class="grupo-campo">
-                <label for="email">E-mail</label>
+                <label for="email">E-mail — disabled</label>
 
                 <div class="linha-campo">
                     <input
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="exemplo@email.com"
-                        required
+                        placeholder="Digite seu e-mail"
                         disabled
                     >
 
@@ -66,7 +66,7 @@ turma: TDE-1BAA-26
             </div>
 
             <div class="grupo-campo">
-                <label for="telefone">Telefone</label>
+                <label for="telefone">Telefone — required</label>
 
                 <div class="linha-campo">
                     <input
@@ -75,7 +75,6 @@ turma: TDE-1BAA-26
                         name="telefone"
                         placeholder="Digite seu telefone"
                         required
-                        disabled
                     >
 
                     <button type="button" data-target="telefone">
@@ -85,18 +84,17 @@ turma: TDE-1BAA-26
             </div>
 
             <div class="grupo-campo">
-                <label for="idade">Idade</label>
+                <label for="idade">Idade — readonly</label>
 
                 <div class="linha-campo">
                     <input
                         type="number"
                         id="idade"
                         name="idade"
-                        placeholder="Digite sua idade"
+                        value="18"
                         min="1"
                         max="120"
-                        required
-                        disabled
+                        readonly
                     >
 
                     <button type="button" data-target="idade">
@@ -106,7 +104,7 @@ turma: TDE-1BAA-26
             </div>
 
             <p class="aviso">
-                Ao clicar fora do campo, ele será desabilitado novamente.
+                Ao perder o foco, o campo será bloqueado novamente.
             </p>
         </form>
     </main>

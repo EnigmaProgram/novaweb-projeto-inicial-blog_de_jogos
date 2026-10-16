@@ -1,3 +1,4 @@
+
 /*
 Descricao: Interatividade da Aula 14 - CSS para Formulários
 nome_arquivo: script.js
@@ -7,35 +8,35 @@ email_aluno: enrico.lelis@edu.senai.br
 turma: TDE-1BAA-26
 */
 
-// Seleciona todos os botões de habilitação
+// Seleciona os botões de habilitação
 const botoes = document.querySelectorAll("button[data-target]");
 
-// Percorre cada botão
+// Habilita o campo correspondente ao botão clicado
 botoes.forEach(function (botao) {
-
-    // Quando o botão for clicado
     botao.addEventListener("click", function () {
-
-        // Encontra o campo indicado pelo botão
         const idCampo = botao.dataset.target;
         const campo = document.getElementById(idCampo);
 
-        // Habilita o campo e coloca o cursor nele
+        if (!campo) {
+            return;
+        }
+
+        // Libera o campo para edição
         campo.disabled = false;
+        campo.readOnly = false;
+
+        // Coloca o foco no campo habilitado
         campo.focus();
     });
 });
 
-// Seleciona todos os campos do formulário
+// Seleciona os campos do formulário
 const campos = document.querySelectorAll("input");
 
-// Percorre cada campo
+// Desabilita o campo quando ele perde o foco
 campos.forEach(function (campo) {
-
-    // Quando o campo perder o foco
     campo.addEventListener("blur", function () {
-
-        // Desabilita o campo novamente
         campo.disabled = true;
+        campo.readOnly = true;
     });
 });
