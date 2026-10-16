@@ -1,0 +1,74 @@
+
+<!--
+Descricao: Exercícios da Aula 15 - JavaScript aplicado a Formulários
+nome_arquivo: index.html
+nome_exercicio: Atividade 15 - JavaScript aplicado a Formulários
+nome_aluno: Enrico Bernardo Carneiro Lelis
+email_aluno: enrico.lelis@edu.senai.br
+turma: TDE-1BAA-26
+-->
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aula 15 - JavaScript aplicado a Formulários</title>
+
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Formulário de Cadastro</h1>
+
+        <p class="descricao">
+            Preencha os campos abaixo para realizar seu cadastro.
+        </p>
+
+        <!-- Mensagem de sucesso ou erro -->
+        <div id="mensagem" class="mensagem" role="status" aria-live="polite" hidden></div>
+
+        <form id="formCadastro">
+            <div class="grupo-campo">
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                    minlength="3"
+                >
+            </div>
+
+            <div class="grupo-campo">
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="exemplo@email.com"
+                    required
+                >
+            </div>
+
+            <div class="grupo-campo">
+                <label for="telefone">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Digite seu telefone"
+                    required
+                >
+            </div>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+</body>
+</html>
